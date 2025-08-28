@@ -20,8 +20,8 @@ remiangsecondsafterhours = remiangsecondsafterdays % secondsperhour
 minutes = remiangsecondsafterhours // secondsperminute
 seconds = remiangsecondsafterhours % secondsperminute
 
-print
-print("days: ")
-print("hours: ")
-print("minutes:")
-print("seconds: ")
+print(years)
+print(days)
+print(hours)
+print(minutes)
+print(seconds)
