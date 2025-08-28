@@ -20,8 +20,8 @@ remiangsecondsafterhours = remiangsecondsafterdays % secondsperhour
 minutes = remiangsecondsafterhours // secondsperminute
 seconds = remiangsecondsafterhours % secondsperminute
 
-print(years)
-print(days)
-print(hours)
-print(minutes)
-print(seconds)
+print(f"Years: {years}")
+print(f"Days: {days}")
+print(f"Hours: {hours}")
+print(f"Minutes: {minutes}")
+print(f"Seconds: {seconds}")
