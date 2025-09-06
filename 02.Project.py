@@ -7,6 +7,8 @@ end2 = float(input("Ending Point - Enter Longitude: "))
 
 import math
 
+angleDegrees = 180
+pi = 3.14
 
 lat1 = math.radians(point1)
 long1 = math.radians(point2)
