@@ -6,9 +6,8 @@ end1 = float(input("Ending point - Enter Latitude: "))
 end2 = float(input("Ending Point - Enter Longitude: "))
 
 import math
-
-angleDegrees = 180
-pi = 3.14
+# instead of using the formula for finding the cos and sin in radians lat1 = (point1 * pi) + (point1 / 180)
+# short hand that helps shorten code = math.radians
 
 lat1 = math.radians(point1)
 long1 = math.radians(point2)
