@@ -1,5 +1,6 @@
-sum = 0 
-for i in range (5):
-    a = int(input("Enter a Number: "))
-    if a < 0:
-        print()
+N = int(input("Enter N: "))
+product = 1
+for i in range (N):
+    num = int(input("Enter a Number: "))
+    product *= num
+print(product)
