@@ -1,3 +1,4 @@
 N = int(input("Enter Number: "))
-for i in range (1,N * 1):
-    print(N)
+sum = 0
+for i in range (i,1 ** N):
+    print(sum)
