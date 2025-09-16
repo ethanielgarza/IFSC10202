@@ -1,6 +1,6 @@
-def count_digits(number):
+def count_digits(number): #defining the function by counting digits in a given number.
 
-    #Calculates the number of digits in an integer.
+    #Calculating the number of digits in an integer.
 
     if number == 0:
         return 1
@@ -44,15 +44,15 @@ def find_special_numbers_in_range(start, end):
     if not found_special_numbers:
         print("No special numbers found in this range.")
 
- #Main program execution
+            #Main program execution
 if __name__ == "__main__":
     try:
-        lower_bound = int(input("Enter Start of range: "))
-        upper_bound = int(input("Enter End of range: "))
+        starting_range  = int(input("Enter Start of range: "))
+        ending_range  = int(input("Enter End of range: "))
 
-        if lower_bound > upper_bound:
-            print("Error: Lower bound cannot be greater than the upper bound.")
+        if starting_range > ending_range :
+            print("Error: starting range cannot be greater than the ending range.")
         else:
-            find_special_numbers_in_range(lower_bound, upper_bound)
+            find_special_numbers_in_range(starting_range, ending_range)
     except ValueError:
         print("Invalid input. Please enter integers for the range bounds.")
