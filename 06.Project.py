@@ -16,7 +16,7 @@ with open(input_filename, 'r') as infile, open(output_filename, 'w') as outfile:
                 for merge_line in mergefile:
                     merge_records += 1
                     output_records += 1 
-                    outfile.write(merge_line)
+                    outfile.write(merge_line);
 print(f"{input_records} input file records")
 print(f"{merge_records} merge file records")
 print(f"{output_records} output file records")
