@@ -1,4 +1,3 @@
-
 def print_list(a):
     for row in a:
         for element in row:
