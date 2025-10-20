@@ -1,6 +1,7 @@
-import io
-import csv
+import io #Input and Output system that helps with running the program.
+import csv #(comma separated value or "CSV_data")
 
+# import CSV and also having it here so I can format correctly.
 csv_data = """Cities,Boston,Buffalo,Chicago,Cleveland,Dallas,Denver,Detroit,El Paso,Houston
 Boston,0,457,983,639,1815,1991,702,2358,1886
 Buffalo,457,0,536,192,1387,1561,252,1928,1532
@@ -12,7 +13,7 @@ Detroit,702,252,279,175,1167,1301,0,1696,1312
 El Paso,2358,1928,1439,1746,625,652,1696,0,756
 Houston,1886,1532,1092,1358,242,1032,1312,756,0"""
 
-data_file = io.StringIO(csv_data)
+data_file = io.StringIO(csv_data) 
 reader = csv.reader(data_file)
 distances_list = list(reader)
 
