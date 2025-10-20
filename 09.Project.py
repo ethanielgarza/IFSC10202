@@ -1,7 +1,12 @@
-import io #Input and Output system that helps with running the program.
-import csv #(comma separated value or "CSV_data")
+import io # Input and Output system that helps with running the program.
+import csv # (comma separated value or "CSV_data")
 
-# import CSV and also having it here so I can format correctly.
+# Using Io and csv python libraries to process data within my code.
+# Basic functions of this code is to gain an "Input" from the user of both "From city and To city" 
+# it then process vaild information to seek said cities if one or both cities are invaild 
+# the program stops and iterates user to type the corrected version for the city. 
+# "Output" is the program finding vaild cities that the User entered and then displaying 
+# the distance between two selected cities.
 csv_data = """Cities,Boston,Buffalo,Chicago,Cleveland,Dallas,Denver,Detroit,El Paso,Houston
 Boston,0,457,983,639,1815,1991,702,2358,1886
 Buffalo,457,0,536,192,1387,1561,252,1928,1532
@@ -48,5 +53,5 @@ elif to_index == -1:
     print("Invalid To City")
 else:
     distance = distances_list[from_index][to_index]
-    print(f"{from_city} to {to_city} - {distance} miles.")
+    print(f"{from_city} to {to_city} - {distance} miles.") 
 
