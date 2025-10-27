@@ -32,5 +32,4 @@ for zipcode_entry in zipcodes:
     total_price = zipcode_entry[2]
 
     average_price = total_price / count
-
-print(f"{zip_code:^10}  {count:<5}    ${average_price:,.2f}")
+    print(f"{zip_code:^10}  {count:<5}    ${average_price:,.2f}")
