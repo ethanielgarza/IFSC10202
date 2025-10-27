@@ -12,5 +12,6 @@ class RetailItem():
         InventoryValue = self.UnitsOnHand * self.Price
         return InventoryValue
 # Read File to get values and then print them out in Terminal
-open("10.02 Inventory.txt")
-x = x.readline.strip()
+open("10.02 Inventory.txt", "r") 
+
+
