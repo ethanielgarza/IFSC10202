@@ -61,7 +61,6 @@ def main():
 
             print(f"{firstname:<11}{lastname:<12}{tnumber:<12}{running_avg:<17.2f}{total_avg:<19.2f}{letter_grade:<12}")
 
-
 if __name__ == "__main__":
     main
 
