@@ -29,7 +29,32 @@ class Student:
             return "D"
         else:
             return "F"
-
+class StudentList:
+    def __init__(self):
+        self.StudentList = []
+    def add_student (self, firstname, lastname, tnumber):
+        Student_object = Student (firstname,lastname, tnumber)
+        self.StudentList.append(Student_object)
+    def find_student(self, tnumber):
+        for index, student in enumerate(self.StudentList):
+            if student.tnumber == tnumber:
+                return index
+            return -1 
+    def print_student_list(self):
+        for student in self.StudentList:
+            print(f"First Name {student.firstname}, Last Name {student.lastname}, ID Number {student.tnumber}, Scores {student.scores}")
+    def add_student_from_file(self):
+        with open ("10.Project Student Scores.txt", "r") as file:
+            for line in file:
+                firstname, lastname, tnumber = line.strip().split(",")
+                self.add_student(firstname, lastname, tnumber )
+    def add_scores_from_file (self):
+         with open ("10.Project Student Scores.txt", "r") as file:
+            for line in file:
+                tnumber, scores = line.strip().split(",")
+                index = self.find_student(tnumber)
+                if index != -1:
+                    self.StudentList[index].scores.append(int(scores))
 def main():
     with open("10.Project Student Scores.txt", "r") as file:
         print(f"{'First Name':<15}{'Last Name':<15}{'ID Number':<15}{'Running Average':<20}{'Semester Average':<20}{'Letter Grade':<15}")
