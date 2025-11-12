@@ -12,7 +12,6 @@ class Student:
         return sum(non_zero) / len(non_zero)
 
     def TotalAverage(self):
-        """Average of all grades, treating blanks as zero."""
         if not self.Grades:
             return 0.0
         return sum(self.Grades) / len(self.Grades)
