@@ -78,16 +78,16 @@ class StudentList:
 
 def main():
     # Create the student list
-    s_list = StudentList()
+    mystudentlist = StudentList()
 
     # Step 1: Add students
-    s_list.add_student_from_file("11.Project Students.txt")
+    mystudentlist.add_student_from_file("11.Project Students.txt")
 
     # Step 2: Add scores
-    s_list.add_scores_from_file("11.Project Scores.txt")
+    mystudentlist.add_scores_from_file("11.Project Scores.txt")
 
     # Step 3: Print results
-    s_list.print_student_list()
+    mystudentlist.print_student_list()
 
 
 if __name__ == "__main__":
