@@ -9,3 +9,7 @@ class Employee:
         self.City = city
         self.State = state
         self.Zip = zip
+
+       
+    def __str__ (self):
+        return (f"Employee #{self.EmployeeNumber}")
