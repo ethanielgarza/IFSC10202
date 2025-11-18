@@ -47,9 +47,7 @@ class EmployeeList:
                 parts = [p.strip() for p in line.split(",")]
                 if len(parts) == 7:
                     emp = Employee(
-                        int(parts[0]), parts[1], parts[2],
-                        parts[3], parts[4], parts[5], parts[6]
-                    )
+                        int(parts[0]), parts[1], parts[2],parts[3], parts[4], parts[5], parts[6])
                     self.employees.append(emp)
    
     def WriteEmployeeFile (self):
